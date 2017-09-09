@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    
+  <div class="row content">
+    
+    <div class="col-sm-4"></div>  
+      <div class="col-sm-4">
+          <h3 align="center" >{{title}}</h3>
+        <label>Enter the Number</label>
+        <input type="text" [(ngModel)]="numberEntered" />
+        <button class="btn btn-primary centerButtons" (click)="romanconvertion()">Convert </button>
+      <br>
+      <label *ngIf="(check)">Roman equilalent is : <span float="right">{{displayValue}}</span> </label>
+      <label *ngIf="(!check)" class="errorclass"> {{error}}
+      </label>
+      </div>
+      <div class="col-sm-4"></div> 
+      
+      </div>
+  </div>
+
